@@ -137,7 +137,64 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2">B</div>
+        <div
+          class="
+            w-1/2
+            relative
+            flex
+            items-center
+            overflow-hidden
+          "
+        >
+          <img
+            src="@/assets/images/bg-shape.svg"
+            alt=""
+            class="
+              absolute
+              top-[-30%]
+              right-[-25%]
+              w-[180%]
+              rotate-[-0deg]
+              opacity-70 z-0
+              pointer-events-none
+            "
+          />
+          <!-- Imagen del chef -->
+          <div
+            class="
+              relative
+              z-10
+            "
+          >
+            <img
+              src="@/assets/images/person-fan.png"
+              alt=""
+              class="
+                max-w-[300px]
+                md:max-w-md
+                lg:max-w-lg
+              "
+            />
+          </div>
+          <!-- Imagen del celular flotando -->
+          <div
+            class="
+              absolute
+              right-4
+              md:right-20-
+              lg:right-40-
+              drop-shadow-2xl
+              z-20
+              w-[516px]
+            "
+          >
+            <img
+              src="@/assets/images/device.png"
+              alt=""
+              class="w-full"
+            />
+          </div>
+        </div>
       </div>
       <div
         id="hero-carousel-controls-mobile"
