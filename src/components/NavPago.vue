@@ -5,16 +5,18 @@
       flex
       justify-between
       bg-nav
-      p-4
-      px-[var(--nav-section)]
-      sm:px-[var(--sm-nav-section)]
+      py-4
+      px-[15px]
+      lg:px-[var(--nav-section)]
+      md:px-[var(--md-nav-section)]
     "
   >
     <img
       class="
-        h-6
-        self-center
+        w-[127px]
         cursor-pointer
+        self-center
+        lg:w-[163.6px]
       "
       src="@/assets/images/logo.svg"
       alt="Pago de Banco de Chile"
@@ -27,40 +29,56 @@
         self-center
         text-white
         gap-5
+        font-semibold
+        text-xs
+        leading-6
+        uppercase
         lg:flex
+        lg:gap-12
+        md:flex
+        md:gap-12
       "
     >
-      <p class="font-semibold text-sm uppercase cursor-pointer">Productos y Tarifas</p>
-      <p class="font-semibold text-sm uppercase cursor-pointer">COMO CONTRATAR</p>
-      <p class="font-semibold text-sm uppercase cursor-pointer">beneficios</p>
+      <p class="cursor-pointer self-center">Productos y Tarifas</p>
+      <p class="cursor-pointer self-center">COMO CONTRATAR</p>
+      <p class="cursor-pointer self-center">beneficios</p>
     </div>
     <div
       class="
         flex
-        gap-3
+        gap-4
+        self-center
+        lg:gap-0
       "
     >
       <button
         class="
-          uppercase
-          py-1
-          px-2
-          h-[40px]
+          py-1.5
+          px-4
           w-[120px]
           bg-btn-fill
           rounded-full
-          text-sm
+          text-xs
+          uppercase
           leading-6
           font-bold
           cursor-pointer
+          md:py-2
+          lg:w-max
+
         "
       >
-        contratar
+        <p>
+          <span class="
+            hidden
+            lg:inline-block
+          ">QUIERO</span> CONTRATAR
+        </p>
       </button>
       <img
         class="
           cursor-pointer
-          lg:hidden
+          md:hidden
         "
         src="@/assets/icons/menu-bars.svg"
         alt="menu"
