@@ -1,0 +1,70 @@
+<template>
+  <nav
+    id="nav"
+    class="
+      flex
+      justify-between
+      bg-nav
+      p-4
+      px-[var(--nav-section)]
+      sm:px-[var(--sm-nav-section)]
+    "
+  >
+    <img
+      class="
+        h-6
+        self-center
+        cursor-pointer
+      "
+      src="@/assets/images/logo.svg"
+      alt="Pago de Banco de Chile"
+    >
+    <div
+      class="
+        hidden
+        w-full
+        justify-center
+        self-center
+        text-white
+        gap-5
+        lg:flex
+      "
+    >
+      <p class="font-semibold text-sm uppercase cursor-pointer">Productos y Tarifas</p>
+      <p class="font-semibold text-sm uppercase cursor-pointer">COMO CONTRATAR</p>
+      <p class="font-semibold text-sm uppercase cursor-pointer">beneficios</p>
+    </div>
+    <div
+      class="
+        flex
+        gap-3
+      "
+    >
+      <button
+        class="
+          uppercase
+          py-1
+          px-2
+          h-[40px]
+          w-[120px]
+          bg-btn-fill
+          rounded-full
+          text-sm
+          leading-6
+          font-bold
+          cursor-pointer
+        "
+      >
+        contratar
+      </button>
+      <img
+        class="
+          cursor-pointer
+          lg:hidden
+        "
+        src="@/assets/icons/menu-bars.svg"
+        alt="menu"
+      >
+    </div>
+  </nav>
+</template>

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import "tailwindcss";
+ @plugin "tailwindcss-debug-screens";
+
+
+@theme {
+  --font-nunito-sans: "Nunito San", Arial, Helvetica, sans-serif;
+  --color-nav: #1A1E89;
+  --color-btn-fill: #00DBBC;
+  --color-btn-fill-text: #0A1861;
+}
+
+:root {
+  --nav-section: 15px;
+  --sm-nav-section: 40px;
+  --section: 19px;
+  --sm-section: 140px;
+  --lgpx-section: 160px;
+  --2xlpx-section: 320px;
+}
+
+body {
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  color: #071828;
+}
+
+
