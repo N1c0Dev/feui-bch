@@ -1,35 +1,37 @@
 <template>
   <section
     id="hero"
-    class="
-      relative
-    "
+    class="relative"
   >
     <div
       id="hero-message-bar"
       class="
+        flex
         absolute
         top-0
         left-0
+        py-4
         w-full
-        h-12
         z-20
-        flex
         gap-4
         items-center
         justify-center
         text-white
         bg-[#1A1E8980]
-        px-[var(--section)]
-        sm:px-[var(--sm-section)]
       "
     >
       <img
         src="@/assets/icons/truck.svg"
         alt=""
-        class="h-6 w-auto"
+        class="w-[30px] h-[18px]"
       />
-      <p class="text-sm">
+      <p
+        class="
+          text-sm
+          leading-6
+          lg:text-xl
+        "
+      >
         ¡Contrata hoy y obtén <span class="font-bold">los mejores beneficios</span>!
       </p>
     </div>
