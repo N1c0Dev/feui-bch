@@ -57,6 +57,7 @@
           px-4
           w-[120px]
           bg-btn-fill
+          text-btn-fill-text
           rounded-full
           text-xs
           uppercase
