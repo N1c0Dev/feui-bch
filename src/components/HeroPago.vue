@@ -49,21 +49,25 @@
         id="hero-carousel-sliders"
         class="
           flex
+          flex-col-reverse
           w-full
+          md:flex-row
         "
       >
         <div
           class="
-            w-1/2
             flex
+            md:w-1/2
           "
-          >
+        >
           <div
             class="
               m-auto
-              max-w-[300px]
-              mt-25
               text-center
+              mt-2
+              max-w-[343px]
+              md:mt-25
+              md:max-w-[300px]
               lg:max-w-[465px]
               lg:text-left
               lg:mt-35
@@ -80,8 +84,8 @@
                 lg:leading-12
               "
             >
-              Hazte cliente empresa del Banco de Chile
-              <span class="font-bold">y obtén tu producto a costo $0*</span>
+              Hazte cliente empresa del Banco de Chile y
+              <span class="font-bold">obtén tu producto a costo $0*</span>
             </h2>
             <div
               class="
@@ -170,11 +174,11 @@
         </div>
         <div
           class="
-            w-1/2
             relative
-            flex
             items-center
             overflow-hidden
+            md:w-1/2
+            md:flex
           "
         >
           <img
@@ -185,9 +189,15 @@
               opacity-80
               z-0
               pointer-events-none
+              w-[319.44px]
+              h-[295.64px]
+              top-[-40px]
+              right-[-0px]
               rotate-[0deg]
-              md:top-[-80px]
-              md:right-[-60px]
+              md:top-[-90px]
+              md:right-[-50px]
+              md:w-[501.95px]
+              md:h-[464.55px]
               lg:top-[-100px]
               lg:right-[-120px]
               lg:w-[687px]
@@ -218,23 +228,42 @@
             />
             <img
               class="
+                relative
+                hidden
+                right-7
+                w-[175px]
+                mx-auto
                 md:w-[313px]
-                lg:hidden
+                md:right-0
+                md:block
                 animate-fade-in-up-
               "
               src="@/assets/images/person-fan-mobile.png"
               alt=""
             />
+            <img
+              class="
+                relative
+                w-[264px]
+                mx-auto
+                md:hidden
+                animate-fade-in-up
+              "
+              src="@/assets/images/person-fan-xs.png"
+              alt=""
+            />
             <div
               class="
                 absolute
-                -top-10
-                -right-16
+                top-0
                 drop-shadow-2xl
                 z-20
+                w-[196px]
+                hidden
                 md:top-12
                 md:-right-30
                 md:w-[310px]
+                md:block
                 lg:top-15
                 lg:-right-58
                 lg:w-[516px]
@@ -243,9 +272,9 @@
               "
             >
               <img
+                class="w-full"
                 src="@/assets/images/device.png"
                 alt="Celular"
-                class="w-full"
               />
             </div>
           </div>
@@ -345,9 +374,4 @@
   animation: float 5s ease-in-out infinite;
 }
 </style>
-
-
-border-bottom: 72px solid;
-
-border-image-source: linear-gradient(180deg, rgba(52, 51, 209, 0) 77.2%, #2829AF 100%);
 
