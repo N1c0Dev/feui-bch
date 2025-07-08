@@ -55,13 +55,17 @@
         <div
           class="
             w-1/2
-              flex
-            "
+            flex
+          "
           >
           <div
             class="
               m-auto
+              max-w-[300px]
+              mt-25
+              text-center
               lg:max-w-[465px]
+              lg:text-left
               lg:mt-35
               lg:mb-20
               "
@@ -70,8 +74,10 @@
               class="
                 text-white
                 font-light
-                leading-12
+                text-3xl
+                leading-10
                 lg:text-[40px]
+                lg:leading-12
               "
             >
               Hazte cliente empresa del Banco de Chile
@@ -80,8 +86,10 @@
             <div
               class="
                 flex
+                flex-col
                 gap-6
                 mt-10
+                lg:flex-row
               "
             >
               <button
@@ -177,9 +185,11 @@
               opacity-80
               z-0
               pointer-events-none
+              rotate-[0deg]
+              md:top-[-80px]
+              md:right-[-60px]
               lg:top-[-100px]
               lg:right-[-120px]
-              lg:rotate-[0deg]
               lg:w-[687px]
               lg:h-[635px]
               xl:right-[-50px]
@@ -192,17 +202,27 @@
             class="
               relative
               z-10
+              mt-[100px]
               lg:mt-15
             "
           >
             <img
               class="
-                max-w-[300px]
-                md:max-w-md
+                hidden
                 lg:max-w-lg
+                lg:block
                 animate-fade-in-up
               "
               src="@/assets/images/person-fan.png"
+              alt=""
+            />
+            <img
+              class="
+                md:w-[313px]
+                lg:hidden
+                animate-fade-in-up-
+              "
+              src="@/assets/images/person-fan-mobile.png"
               alt=""
             />
             <div
@@ -212,8 +232,9 @@
                 -right-16
                 drop-shadow-2xl
                 z-20
-                md:-top-14
-                md:-right-20
+                md:top-12
+                md:-right-30
+                md:w-[310px]
                 lg:top-15
                 lg:-right-58
                 lg:w-[516px]
@@ -234,7 +255,7 @@
         id="hero-carousel-controls-mobile"
         class="
           w-full
-          mt-6
+          py-8
           flex
           gap-3
           justify-center
@@ -273,10 +294,11 @@
 
 <style scoped>
 #hero-carousel {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       0deg,
-      #3e3cf0,
-      #3e3cf0
+       #201ea9,
+       #3433D1
     ),
     linear-gradient(
       0deg,
@@ -284,6 +306,7 @@
       rgba(26, 30, 137, 0) 100%
     );
 }
+
 @keyframes fade-in-up {
   0% {
     opacity: 0;
@@ -294,7 +317,6 @@
     transform: translateY(0);
   }
 }
-
 @keyframes fade-in-right {
   0% {
     opacity: 0;
@@ -305,7 +327,6 @@
     transform: translateX(0);
   }
 }
-
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -314,16 +335,19 @@
     transform: translateY(-10px);
   }
 }
-
 .animate-fade-in-up {
   animation: fade-in-up 0.8s ease-out both;
 }
-
 .animate-fade-in-right {
   animation: fade-in-right 0.8s ease-out both;
 }
-
 .animate-float {
   animation: float 5s ease-in-out infinite;
 }
 </style>
+
+
+border-bottom: 72px solid;
+
+border-image-source: linear-gradient(180deg, rgba(52, 51, 209, 0) 77.2%, #2829AF 100%);
+
