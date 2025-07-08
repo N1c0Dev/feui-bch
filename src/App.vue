@@ -8,7 +8,7 @@ import NavPago from './components/NavPago.vue';
 <template>
   <main
     id="wrapper"
-    class="debug-screens"
+    class="debug-screens-"
   >
     <nav-pago />
     <hero-pago />
