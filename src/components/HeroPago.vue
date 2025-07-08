@@ -93,6 +93,8 @@
                 flex-col
                 gap-6
                 mt-10
+                px-5
+                md:px-0
                 lg:flex-row
               "
             >
@@ -236,7 +238,8 @@
                 md:w-[313px]
                 md:right-0
                 md:block
-                animate-fade-in-up-
+                lg:hidden
+                animate-fade-in-up
               "
               src="@/assets/images/person-fan-mobile.png"
               alt=""
