@@ -25,52 +25,185 @@
       <img
         src="@/assets/icons/truck.svg"
         alt=""
-        class="w-[30px] h-[18px]"
+        class="
+          w-[30px]
+          h-[18px]
+        "
       />
-      <p class="text-sm leading-6 lg:text-xl bg-transparent">
+      <p
+        class="
+          text-sm
+          leading-6
+          bg-transparent
+          lg:text-xl
+        "
+      >
         ¡Contrata hoy y obtén <span class="font-bold">los mejores beneficios</span>!
       </p>
     </div>
     <section
       id="hero-carousel"
-      class=" rounded-b-[56px]"
+      class="rounded-b-[56px]"
     >
       <div
         id="hero-carousel-sliders"
-        class="flex w-full"
+        class="
+          flex
+          w-full
+        "
       >
-        <div class="w-1/2 flex">
-          <div class="m-auto lg:max-w-[465px] lg:mt-35 lg:mb-20">
-            <h2 class="text-white font-light leading-12 lg:text-[40px]">
+        <div
+          class="
+            w-1/2
+              flex
+            "
+          >
+          <div
+            class="
+              m-auto
+              lg:max-w-[465px]
+              lg:mt-35
+              lg:mb-20
+              "
+            >
+            <h2
+              class="
+                text-white
+                font-light
+                leading-12
+                lg:text-[40px]
+              "
+            >
               Hazte cliente empresa del Banco de Chile
               <span class="font-bold">y obtén tu producto a costo $0*</span>
             </h2>
-            <div class="flex gap-6 mt-10">
-              <button class="py-4 px-6 bg-btn-fill text-btn-fill-text font-bold text-sm leading-6 text-center uppercase rounded-full cursor-pointer lg:w-[198px]">
+            <div
+              class="
+                flex
+                gap-6
+                mt-10
+              "
+            >
+              <button
+                class="
+                  py-4
+                  px-6
+                  bg-btn-fill
+                  text-btn-fill-text
+                  font-bold
+                  text-sm
+                  leading-6
+                  text-center
+                  uppercase
+                  rounded-full
+                  cursor-pointer
+                  lg:w-[198px]
+                  "
+                >
                 <p>QUIERO CONTRATAR</p>
               </button>
-              <button class="py-4 px-6 bg-transparent text-white font-bold text-sm leading-6 text-center uppercase rounded-full border-2 cursor-pointer lg:w-[206px]">
+              <button
+                class="
+                  py-4
+                  px-6
+                  bg-transparent
+                  text-white
+                  font-bold
+                  text-sm
+                  leading-6
+                  text-center
+                  uppercase
+                  rounded-full
+                  border-2
+                  cursor-pointer
+                  lg:w-[206px]
+                "
+              >
                 <p>Nuestras tarifas</p>
               </button>
             </div>
-            <div id="hero-carousel-controls-desktop" class="w-full hidden gap-3 mt-15 lg:flex">
-              <img class="user-none self-center cursor-pointer rotate-180" src="@/assets/icons/arrow-hero-alt.svg" alt="slider anterior" />
-              <img class="self-center cursor-pointer" src="@/assets/icons/arrow-hero-alt.svg" alt="slider siguiente" />
-              <img class="self-center cursor-pointer" src="@/assets/icons/pause-hero.svg" alt="pausar slider" />
+            <div
+              id="hero-carousel-controls-desktop"
+              class="
+                w-full
+                hidden
+                gap-3
+                mt-15
+                lg:flex
+              "
+            >
+              <img
+                class="
+                  self-center
+                  cursor-pointer
+                  rotate-180
+                "
+                src="@/assets/icons/arrow-hero-alt.svg"
+                alt="slider anterior"
+              />
+              <img
+                class="
+                  self-center
+                  cursor-pointer
+                "
+                src="@/assets/icons/arrow-hero-alt.svg"
+                alt="slider siguiente"
+              />
+              <img
+                class="
+                  self-center
+                  cursor-pointer
+                "
+                src="@/assets/icons/pause-hero.svg"
+                alt="pausar slider"
+              />
             </div>
           </div>
         </div>
-        <div class="w-1/2 relative flex items-center overflow-hidden">
+        <div
+          class="
+            w-1/2
+            relative
+            flex
+            items-center
+            overflow-hidden
+          "
+        >
           <img
             src="@/assets/images/bg-shape.svg"
             alt=""
-            class="absolute opacity-80 z-0 pointer-events-none 2xl:right-[-65px] 2xl:w-[900px] 2xl:h-[632px] xl:right-[-50px] lg:top-[-100px] lg:right-[-120px] lg:rotate-[0deg] lg:w-[687px] lg:h-[635px]"
+            class="
+              absolute
+              opacity-80
+              z-0
+              pointer-events-none
+              lg:top-[-100px]
+              lg:right-[-120px]
+              lg:rotate-[0deg]
+              lg:w-[687px]
+              lg:h-[635px]
+              xl:right-[-50px]
+              2xl:right-[-65px]
+              2xl:w-[900px]
+              2xl:h-[632px]
+            "
+
           />
-          <div class="relative z-10 lg:mt-15">
+          <div
+            class="
+              relative
+              z-10
+              lg:mt-15
+            "
+            >
             <img
+              class="
+                max-w-[300px]
+                md:max-w-md
+                lg:max-w-lg
+              "
               src="@/assets/images/person-fan.png"
-              alt="Chef"
-              class="max-w-[300px] md:max-w-md lg:max-w-lg"
+              alt=""
             />
             <div
               class="
@@ -79,11 +212,11 @@
                 -right-16
                 drop-shadow-2xl
                 z-20
+                md:-top-14
+                md:-right-20
                 lg:top-15
                 lg:-right-58
                 lg:w-[516px]
-                md:-top-14
-                md:-right-20
               "
             >
               <img
@@ -95,10 +228,42 @@
           </div>
         </div>
       </div>
-      <div id="hero-carousel-controls-mobile" class="w-full flex gap-3 justify-center lg:hidden mt-6">
-        <img class="user-none self-center cursor-pointer rotate-180" src="@/assets/icons/arrow-hero-alt.svg" alt="slider anterior" />
-        <img class="self-center cursor-pointer" src="@/assets/icons/arrow-hero-alt.svg" alt="slider siguiente" />
-        <img class="self-center cursor-pointer" src="@/assets/icons/pause-hero.svg" alt="pausar slider" />
+      <div
+        id="hero-carousel-controls-mobile"
+        class="
+          w-full
+          mt-6
+          flex
+          gap-3
+          justify-center
+          lg:hidden
+        "
+      >
+        <img
+          class="
+            self-center
+            cursor-pointer
+            rotate-180
+          "
+          src="@/assets/icons/arrow-hero-alt.svg"
+          alt="slider anterior"
+        />
+        <img
+          class="
+            self-center
+            cursor-pointer
+          "
+          src="@/assets/icons/arrow-hero-alt.svg"
+          alt="slider siguiente"
+        />
+        <img
+          class="
+            self-center
+            cursor-pointer
+          "
+          src="@/assets/icons/pause-hero.svg"
+          alt="pausar slider"
+        />
       </div>
     </section>
   </section>
