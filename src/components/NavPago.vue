@@ -1,3 +1,10 @@
+<script setup>
+import { ref } from "vue"
+
+const showMenu = ref(false)
+
+const handleMenu = () => showMenu.value = !showMenu.value
+</script>
 <template>
   <nav
     id="nav"
@@ -7,8 +14,8 @@
       bg-nav
       py-4
       px-[15px]
-      lg:px-[var(--nav-section)]
       md:px-[var(--md-nav-section)]
+      lg:px-[var(--nav-section)]
     "
   >
     <img
@@ -83,7 +90,156 @@
         "
         src="@/assets/icons/menu-bars.svg"
         alt="menu"
+        @click="handleMenu"
       >
+    </div>
+    <div
+      v-if="showMenu"
+      class="
+        fixed
+        inset-0
+        z-40
+        bg-[#1A1E89]
+        text-white
+        py-4
+        px-[15px]
+        overflow-y-hidden
+        md:hidden
+        md:px-[var(--md-nav-section)]
+        lg:px-[var(--nav-section)]
+      "
+    >
+      <div
+        class="
+          flex
+          justify-between
+          mb-10
+          mt-[6px]
+        "
+      >
+        <img
+          class="
+            w-[127px]
+            cursor-pointer
+            self-center
+            lg:w-[163.6px]
+          "
+          src="@/assets/images/logo.svg"
+          alt="Pago de Banco de Chile"
+        >
+        <img src="" alt="">
+        <button
+          class="
+            flex
+            gap-3
+            text-xs
+            leading-4
+            cursor-pointer
+            self-center
+          "
+          @click="handleMenu"
+        >
+          cerrar
+          <img src="@/assets/icons/menu-x.svg" alt="cerrar">
+        </button>
+      </div>
+
+      <div
+        class="
+          flex
+          flex-col
+        "
+      >
+        <div
+          class="
+            py-5
+            border-b
+            border-white/50
+          "
+        >
+          <button
+            class="
+              w-full
+              text-left
+              flex
+              justify-between
+              items-center
+              leading-6
+              tracking-normal
+              uppercase
+              "
+            >
+            <p
+              class="
+                w-fit
+                text-[#E8F4F6]
+                cursor-pointer
+              "
+            >
+              Productos y Tarifas
+            </p>
+          </button>
+        </div>
+        <div
+          class="
+            py-5
+            border-b
+            border-white/50
+          "
+        >
+          <button
+            class="
+              w-full
+              text-left
+              flex
+              justify-between
+              items-center
+              leading-6
+              tracking-normal
+              uppercase
+            "
+          >
+            <p
+              class="
+                w-fit
+                text-[#E8F4F6]
+                cursor-pointer
+              "
+            >
+              COMO CONTRATAR
+            </p>
+          </button>
+        </div>
+        <div
+          class="
+            py-5 border-b
+            border-white/50
+            "
+          >
+          <button
+            class="
+              w-full
+              text-left
+              flex
+              justify-between
+              items-center
+              leading-6
+              tracking-normal
+              uppercase
+            "
+          >
+            <p
+              class="
+                w-fit
+                text-[#E8F4F6]
+                cursor-pointer
+              "
+            >
+              beneficios
+            </p>
+          </button>
+        </div>
+      </div>
     </div>
   </nav>
 </template>

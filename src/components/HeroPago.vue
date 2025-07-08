@@ -43,7 +43,10 @@
     </div>
     <section
       id="hero-carousel"
-      class="rounded-b-[56px]"
+      class="
+        rounded-b-[48px]
+        lg:rounded-b-[56px]
+      "
     >
       <div
         id="hero-carousel-sliders"
@@ -268,8 +271,9 @@
                 md:w-[310px]
                 md:block
                 lg:top-15
-                lg:-right-58
+                lg:-right-45
                 lg:w-[516px]
+                xl:-right-58
                 animate-fade-in-right
                 animate-float
               "
