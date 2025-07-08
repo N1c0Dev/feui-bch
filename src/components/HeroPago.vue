@@ -187,7 +187,6 @@
               2xl:w-[900px]
               2xl:h-[632px]
             "
-
           />
           <div
             class="
@@ -195,12 +194,13 @@
               z-10
               lg:mt-15
             "
-            >
+          >
             <img
               class="
                 max-w-[300px]
                 md:max-w-md
                 lg:max-w-lg
+                animate-fade-in-up
               "
               src="@/assets/images/person-fan.png"
               alt=""
@@ -217,6 +217,8 @@
                 lg:top-15
                 lg:-right-58
                 lg:w-[516px]
+                animate-fade-in-right
+                animate-float
               "
             >
               <img
@@ -281,5 +283,47 @@
       rgba(26, 30, 137, 0.8) 0%,
       rgba(26, 30, 137, 0) 100%
     );
+}
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out both;
+}
+
+.animate-fade-in-right {
+  animation: fade-in-right 0.8s ease-out both;
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
 }
 </style>
