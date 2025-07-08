@@ -64,7 +64,7 @@
           <img
             src="@/assets/images/bg-shape.svg"
             alt=""
-            class="absolute top-[-40%] right-[-25%] rotate-[-0deg] opacity-80 z-0 pointer-events-none"
+            class="absolute opacity-80 z-0 pointer-events-none 2xl:right-[-65px] 2xl:w-[900px] 2xl:h-[632px] xl:right-[-50px] lg:top-[-100px] lg:right-[-120px] lg:rotate-[0deg] lg:w-[687px] lg:h-[635px]"
           />
           <div class="relative z-10 lg:mt-15">
             <img
